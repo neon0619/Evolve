@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima-Nova-Bold.otf">
+            <string>ProximaNova-Bold</string>
+        </array>
+        <array key="proxima_nova.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="IntroDetailsCollectionViewCell" customModule="EVOLVE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="680"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="680"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vav-KP-QMk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="680"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient_intro" translatesAutoresizingMaskIntoConstraints="NO" id="y8h-CP-lSv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="680"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's time for you to evolve your nutritional wellbeing. Let's create some delicious meals!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQY-Ik-Lry">
+                                <rect key="frame" x="45" y="160" width="230" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="J8S-tQ-RDb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bN5-EV-OPe">
+                                <rect key="frame" x="20" y="383" width="280" height="70"/>
+                                <color key="backgroundColor" red="0.72156862745098038" green="0.61960784313725492" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="MPx-Jb-yyu"/>
+                                    <constraint firstAttribute="height" constant="70" id="k0k-Sm-RC6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
+                                <state key="normal" title="GET COOKING">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionGetCooking:" destination="gTV-IL-0wX" eventType="touchUpInside" id="kiL-Ok-ag3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="y8h-CP-lSv" firstAttribute="leading" secondItem="vav-KP-QMk" secondAttribute="leading" id="1ER-aF-T8M"/>
+                            <constraint firstAttribute="trailing" secondItem="y8h-CP-lSv" secondAttribute="trailing" id="KGl-pA-dtk"/>
+                            <constraint firstItem="YQY-Ik-Lry" firstAttribute="top" secondItem="vav-KP-QMk" secondAttribute="top" constant="160" id="O4C-gG-MOn"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YQY-Ik-Lry" secondAttribute="trailing" constant="20" id="PPO-TD-8i5"/>
+                            <constraint firstItem="YQY-Ik-Lry" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vav-KP-QMk" secondAttribute="leading" constant="20" id="cZ3-u2-Gh2"/>
+                            <constraint firstItem="y8h-CP-lSv" firstAttribute="top" secondItem="vav-KP-QMk" secondAttribute="top" id="i6H-V5-4eX"/>
+                            <constraint firstItem="YQY-Ik-Lry" firstAttribute="centerX" secondItem="vav-KP-QMk" secondAttribute="centerX" id="lTs-Q7-fSf"/>
+                            <constraint firstItem="bN5-EV-OPe" firstAttribute="top" secondItem="YQY-Ik-Lry" secondAttribute="bottom" constant="50" id="ow8-2c-ak6"/>
+                            <constraint firstItem="bN5-EV-OPe" firstAttribute="centerX" secondItem="vav-KP-QMk" secondAttribute="centerX" id="rOZ-oi-uzr"/>
+                            <constraint firstAttribute="bottom" secondItem="y8h-CP-lSv" secondAttribute="bottom" id="sFz-vw-BJJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="vav-KP-QMk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0Hx-OC-WOg"/>
+                <constraint firstAttribute="trailing" secondItem="vav-KP-QMk" secondAttribute="trailing" id="4jq-Jg-91I"/>
+                <constraint firstItem="vav-KP-QMk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EMp-aX-jMm"/>
+                <constraint firstAttribute="bottom" secondItem="vav-KP-QMk" secondAttribute="bottom" id="TcB-aW-Gwc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="61" height="227"/>
+            <point key="canvasLocation" x="144.92753623188406" y="64.955357142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gradient_intro" width="324" height="700"/>
+    </resources>
+</document>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FuturaLT-Bold.ttf">
+            <string>FuturaLT-Bold</string>
+        </array>
+        <array key="proxima_nova.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="IntroCollectionViewCell" customModule="EVOLVE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tpj-zt-Q6I">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient_intro" translatesAutoresizingMaskIntoConstraints="NO" id="KO0-Ld-rRS">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Df-l3-Guv">
+                            <rect key="frame" x="64.5" y="30" width="246" height="170"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm Pete Evans and welcome to my new app," textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTK-GJ-htg">
+                                    <rect key="frame" x="0.0" y="0.0" width="246" height="102"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="246" id="LtL-22-uPQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="FuturaLT-Bold" family="Futura LT" pointSize="26"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVOLVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzx-BS-8ZP">
+                                    <rect key="frame" x="44.5" y="117" width="157" height="53"/>
+                                    <fontDescription key="fontDescription" name="FuturaLT-Bold" family="Futura LT" pointSize="40"/>
+                                    <color key="textColor" red="0.45490196078431372" green="0.38039215686274508" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ZTK-GJ-htg" firstAttribute="centerX" secondItem="2Df-l3-Guv" secondAttribute="centerX" id="1iZ-qc-p2s"/>
+                                <constraint firstItem="ZTK-GJ-htg" firstAttribute="leading" secondItem="2Df-l3-Guv" secondAttribute="leading" id="3Gg-NG-vbO"/>
+                                <constraint firstAttribute="trailing" secondItem="ZTK-GJ-htg" secondAttribute="trailing" id="8Ao-mS-aPi"/>
+                                <constraint firstItem="ZTK-GJ-htg" firstAttribute="top" secondItem="2Df-l3-Guv" secondAttribute="top" id="HS0-c4-v7c"/>
+                                <constraint firstItem="yzx-BS-8ZP" firstAttribute="centerX" secondItem="ZTK-GJ-htg" secondAttribute="centerX" id="P3b-Ov-s2q"/>
+                                <constraint firstAttribute="bottom" secondItem="yzx-BS-8ZP" secondAttribute="bottom" id="bdp-Tk-8bD"/>
+                                <constraint firstItem="yzx-BS-8ZP" firstAttribute="top" secondItem="ZTK-GJ-htg" secondAttribute="bottom" constant="15" id="m59-f4-QWv"/>
+                            </constraints>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxV-lD-A6x">
+                            <rect key="frame" x="0.0" y="60" width="375" height="587"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Get inspired by nutritious and simple recipes that you can make at home!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMB-64-2rF">
+                                    <rect key="frame" x="75" y="0.0" width="225" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="225" id="tDk-Cf-AdT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 22" translatesAutoresizingMaskIntoConstraints="NO" id="fbw-co-NHw">
+                                    <rect key="frame" x="78" y="80" width="219" height="477"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="fbw-co-NHw" secondAttribute="height" multiplier="283:617" id="9Mp-zi-5dI"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="zMB-64-2rF" firstAttribute="centerX" secondItem="zxV-lD-A6x" secondAttribute="centerX" id="4Fe-6l-fVN"/>
+                                <constraint firstItem="fbw-co-NHw" firstAttribute="top" secondItem="zMB-64-2rF" secondAttribute="bottom" constant="20" id="69z-Tb-TMP"/>
+                                <constraint firstItem="zMB-64-2rF" firstAttribute="top" secondItem="zxV-lD-A6x" secondAttribute="top" id="HZs-TX-NIb"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fbw-co-NHw" secondAttribute="bottom" constant="30" id="T59-0g-ZGv"/>
+                                <constraint firstItem="fbw-co-NHw" firstAttribute="centerX" secondItem="zxV-lD-A6x" secondAttribute="centerX" id="f5c-1V-SzJ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="zxV-lD-A6x" firstAttribute="leading" secondItem="Tpj-zt-Q6I" secondAttribute="leading" id="3JD-jd-bsp"/>
+                        <constraint firstItem="KO0-Ld-rRS" firstAttribute="top" secondItem="Tpj-zt-Q6I" secondAttribute="top" id="6Ta-VD-9mY"/>
+                        <constraint firstItem="KO0-Ld-rRS" firstAttribute="leading" secondItem="Tpj-zt-Q6I" secondAttribute="leading" id="822-CV-gXk"/>
+                        <constraint firstItem="zxV-lD-A6x" firstAttribute="top" secondItem="Tpj-zt-Q6I" secondAttribute="top" constant="60" id="8rC-jt-4qr"/>
+                        <constraint firstAttribute="trailing" secondItem="zxV-lD-A6x" secondAttribute="trailing" id="D01-xo-zBn"/>
+                        <constraint firstAttribute="bottom" secondItem="KO0-Ld-rRS" secondAttribute="bottom" id="VjO-bL-Hbv"/>
+                        <constraint firstAttribute="trailing" secondItem="KO0-Ld-rRS" secondAttribute="trailing" id="Yy5-4b-zFY"/>
+                        <constraint firstAttribute="bottom" secondItem="zxV-lD-A6x" secondAttribute="bottom" constant="20" id="fAV-MB-q5g"/>
+                        <constraint firstItem="2Df-l3-Guv" firstAttribute="centerX" secondItem="Tpj-zt-Q6I" secondAttribute="centerX" id="oQ5-GI-6Ba"/>
+                        <constraint firstItem="2Df-l3-Guv" firstAttribute="top" secondItem="Tpj-zt-Q6I" secondAttribute="top" constant="30" id="xhU-jh-cHd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1oh-8q-zvl" firstAttribute="leading" secondItem="Tpj-zt-Q6I" secondAttribute="leading" id="1kD-6B-YGg"/>
+                <constraint firstItem="Tpj-zt-Q6I" firstAttribute="bottom" secondItem="1oh-8q-zvl" secondAttribute="bottom" id="8D7-nj-3wL"/>
+                <constraint firstItem="1oh-8q-zvl" firstAttribute="top" secondItem="Tpj-zt-Q6I" secondAttribute="top" id="9xp-8A-Zjl"/>
+                <constraint firstItem="Tpj-zt-Q6I" firstAttribute="trailing" secondItem="1oh-8q-zvl" secondAttribute="trailing" id="SHw-MU-NvQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="1oh-8q-zvl"/>
+            <connections>
+                <outlet property="firstView" destination="2Df-l3-Guv" id="BhN-sw-xqh"/>
+                <outlet property="imgImage" destination="KO0-Ld-rRS" id="h2C-Sg-fsz"/>
+                <outlet property="imgSecondImage" destination="fbw-co-NHw" id="B0r-uk-TmJ"/>
+                <outlet property="lblSecondLabel" destination="zMB-64-2rF" id="9K5-ZF-Adm"/>
+                <outlet property="secondView" destination="zxV-lD-A6x" id="2tt-e1-Etg"/>
+            </connections>
+            <point key="canvasLocation" x="133.59999999999999" y="75.562218890554732"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image 22" width="358" height="692"/>
+        <image name="gradient_intro" width="324" height="700"/>
+    </resources>
+</document>

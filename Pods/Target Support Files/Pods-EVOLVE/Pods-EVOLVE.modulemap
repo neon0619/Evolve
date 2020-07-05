@@ -1,0 +1,6 @@
+framework module Pods_EVOLVE {
+  umbrella header "Pods-EVOLVE-umbrella.h"
+
+  export *
+  module * { export * }
+}
